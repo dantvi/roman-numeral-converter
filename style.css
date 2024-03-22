@@ -1,5 +1,11 @@
 /**************** PUT GOOGLE FONTS HERE ****************/
 
+:root {
+    --primary-color: chocolate;
+    --secondary-color: green;
+    --border-radius: 5px;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -18,11 +24,66 @@ body {
     align-items: center;
 }
 
+h1{
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+input{
+    border: 0;
+}
+
 .converter {
-    background-color: chocolate;
-    
+    background-color: var(--primary-color);
+    width: 90%;
+    max-width: 500px;
+    border-radius: var(--border-radius);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.num-label {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.num-field {
+    font-size: 25px;
+    width: 50%;
+    border-radius: var(--border-radius);
+}
+
+.convert-btn {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 0;
+    padding: 5px 0;
+/*     font-family: ; */
+    font-size: 18px;
+    width: 25%;
+    border-radius: var(--border-radius);
+}
+
+.convert-btn:hover,
+.convert-btn:focus {
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .output {
-    background-color: green;
+    background-color: var(--secondary-color);
+    width: 90%;
+    max-width: 500px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: var(--border-radius);
 }
