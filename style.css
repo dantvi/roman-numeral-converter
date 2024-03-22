@@ -1,3 +1,5 @@
+/**************** PUT GOOGLE FONTS HERE ****************/
+
 html {
     box-sizing: border-box;
 }
@@ -5,4 +7,22 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
+    background: url(./background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.converter {
+    background-color: chocolate;
+    
+}
+
+.output {
+    background-color: green;
 }
