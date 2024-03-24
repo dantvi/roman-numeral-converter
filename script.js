@@ -4,7 +4,13 @@ const outputEl = document.getElementById('output');
 
 function validateNumber(num) {
     if (num === '') {
-        outputEl.textContent = `Please enter a valid number`;
+        outputEl.textContent = "Please enter a valid number";
+    } else if (num < 1) {
+        outputEl.textContent = "Please enter a number greater than or equal to 1";
+    } else if (num > 3999) {
+        outputEl.textContent = "Please enter a number less than or equal to 3999";
+    } else {
+        return num;
     }
 }
 
@@ -19,9 +25,6 @@ btn.addEventListener('click', convertNumber);
 /* 
 Pseudokod
 
-Om klickar på knappen utan att skriva in ett värde => "Please enter a valid number" i outputEl
-Om skriver in -1 => "Please enter a number greater than or equal to 1"
-Om skriver in 4000 => "Please enter a number less than or equal to 3999"
 Om skriver in 9 => Convertera till "IX"
 osv...
 
