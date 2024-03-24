@@ -73,8 +73,7 @@ input{
     border-radius: var(--border-radius);
 }
 
-.convert-btn:hover,
-.convert-btn:focus {
+.convert-btn:hover {
     background: rgba(0, 0, 0, 0.4);
 }
 
